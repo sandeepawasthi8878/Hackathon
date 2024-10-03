@@ -1,0 +1,72 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b3b3b; /* Dark zinc background */
+  height: 100vh; /* Full height of the viewport */
+  text-align: center;
+  padding: 20px; /* Add some padding */
+}
+.contact-container h3 {
+  font-size: 30px;
+  color: #dbd7d7;
+}
+.contact-header {
+  color: #c4c0c0; /* White color for header text */
+  margin-bottom: 30px; /* Space below header */
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap; /* Wrap boxes in rows */
+  justify-content: center;
+  width: 100%; /* Full width to center boxes */
+}
+
+.contact-method {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #141414; /* Border color */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  box-shadow: 0 4px 15px rgba(119, 118, 118, 0.5); /* Box shadow for depth */
+  max-width: 300px; /* Limit width */
+  color: #cac4c4; /* Text color */
+}
+
+.contact-method h3 {
+  font-size: 24px;
+}
+
+.contact-method p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.contact-method a {
+  color: #5982ad;
+  text-decoration: none;
+}
+
+.contact-method a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: rgb(33, 33, 34);
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 50px; /* Space above button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #23527c;
+}
+
+.spn {
+  color: white;
+}

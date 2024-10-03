@@ -1,0 +1,87 @@
+.signup-page {
+  display: flex;
+  background-image: url('https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height of the viewport */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.signup-form {
+  max-width: 600px; /* Form width */
+  padding: 20px 50px; /* Form padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Shadow effect */
+  color: #cccccc; /* Text color */
+  margin: 20px; /* Add margin to ensure no overflow */
+}
+
+.signup-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px; /* Title font size */
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input,
+.signup-form select {
+  margin-bottom: 20px; /* Space between form elements */
+  padding: 15px; /* Input padding */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent inputs */
+  color: #fff; /* Input text color */
+}
+
+/* Fix for password input visibility */
+.signup-form input[type="password"] {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent password input */
+  color: #fff; /* Ensure password text color is visible */
+}
+
+.signup-form .gender-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Space for gender selection */
+}
+
+.signup-form label {
+  font-weight: bold;
+  margin-right: 10px; /* Space between label and input */
+}
+
+.signup-form select {
+  background-color: #333; /* Background color for select */
+}
+
+.signup-form button {
+  padding: 12px; /* Button padding */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 3px;
+  font-size: 18px; /* Button font size */
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3; /* Button hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .signup-form {
+    width: 90%; /* Full width on small screens */
+    margin: 10px; /* Adjust margin on small screens */
+  }
+}

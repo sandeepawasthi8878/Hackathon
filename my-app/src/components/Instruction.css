@@ -1,0 +1,143 @@
+.event-page {
+  background-color: #2b2b2b; /* Darker background for better contrast */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.schedule-section, .instructions-section, .frontend-tips, .backend-tips, .ui-design-tips, .database-tips {
+  margin-bottom: 40px;
+}
+
+.schedule-section h2, 
+.instructions-section h2, 
+.frontend-tips h2, 
+.backend-tips h2, 
+.ui-design-tips h2, 
+.database-tips h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #e5e5e5;
+  font-weight: bold;
+}
+
+.schedule {
+  display: grid;
+  gap: 20px;
+}
+
+.schedule-item {
+  background-color: #696969; /* Dark khaki look with better contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.time {
+  font-size: 22px;
+  color: #eef2f5; /* Bright blue for better readability */
+  font-weight: bold;
+}
+
+.event {
+  font-size: 20px;
+  color: #c0c3c5;
+  font-weight: bold;
+}
+
+.instructions {
+  background-color: #444; /* Softer khaki variant */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.instructions p {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #807c7c; /* Stronger tone of brown for emphasis */
+  font-weight: bold;
+}
+
+.instructions ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #796761; /* Firebrick for more vibrant instructions */
+}
+
+.instructions li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #bdbbba;
+  font-weight: bold;
+}
+
+.frontend-tips, 
+.backend-tips, 
+.ui-design-tips, 
+.database-tips {
+  background-color: #696969; /* Light zinc color for tips */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.frontend-tips ul, 
+.backend-tips ul, 
+.ui-design-tips ul, 
+.database-tips ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.frontend-tips ul li, 
+.backend-tips ul li, 
+.ui-design-tips ul li, 
+.database-tips ul li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #9e7a76; /* Red button for stronger call to action */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #74433e; /* Darker shade on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .schedule-item {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-section h2, .instructions-section h2, .frontend-tips h2, .backend-tips h2, .ui-design-tips h2, .database-tips h2 {
+      font-size: 24px;
+  }
+  
+  .button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}

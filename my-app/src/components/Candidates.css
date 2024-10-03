@@ -1,0 +1,95 @@
+/* src/components/Candidates.css */
+
+/* Main container styling */
+.candidate {
+  background-color: #1F1E24; /* Dark zinc background */
+  color: #ffffff; /* Light white text */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Candidate table styling */
+.candidate-table {
+  background-color: #374150; /* Slightly lighter dark background */
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.candidate-table th,
+.candidate-table td {
+  border: 1px solid #555; /* Darker border */
+  padding: 12px; /* Increased padding */
+  text-align: left;
+  color: #ffffff; /* Light white text */
+  font-weight: bold;
+}
+
+.candidate-table th {
+  background-color: #34495E; /* Darker header background */
+}
+
+/* Button for viewing candidate list */
+.candidate-list-button {
+  background-color: #007bff; /* Button background color */
+  color: #ffffff; /* White button text color */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.candidate-list-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Pagination item */
+.pagination-container ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-container li {
+  font-weight: bold;
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #ffffff; /* White text color */
+  cursor: pointer;
+  border: 2px solid #555; /* Dark border */
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active pagination item */
+.pagination-container li.active {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+/* Pagination item hover effect */
+.pagination-container li:hover {
+  background-color: #333;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+/* "Previous" and "Next" buttons */
+.custom-previous-button, .custom-next-button {
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+}
