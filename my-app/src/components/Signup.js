@@ -36,7 +36,7 @@ function Signup() {
     };
 
     axios
-      .post('http://localhost:3002/signup', formData)
+      .post('https://hackathon-4-tnf2.onrender.com/signup', formData)
       .then((response) => {
         alert('Registration successful!');
         console.log(response.data);

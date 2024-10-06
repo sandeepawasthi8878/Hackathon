@@ -11,7 +11,7 @@ function Candidates() {
   const candidatesPerPage = 5;
   const fetchCandidates = async (selectedPage = 0) => {
     try {
-      const response = await axios.get(`http://localhost:3002/api/Candidates/`);
+      const response = await axios.get(`https://hackathon-4-tnf2.onrender.com/api/Candidates/`);
       const candidates = response.data;
       console.log(candidates);
       const pageCount = Math.ceil(candidates.length / candidatesPerPage);
