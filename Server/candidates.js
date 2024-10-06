@@ -1,10 +1,9 @@
-// candidates.js
 const express = require('express');
 const router = express.Router();
 
 const Candidates = require('./Candidates.model');
 
-// Get all candidates
+
 router.get('/', (req, res) => {
   Candidates.find()
     .then(candidates => res.json(candidates))

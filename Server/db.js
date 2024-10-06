@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 
-mongoose.set('strictQuery', true); // या false, जैसा आपकी आवश्यकता हो
+mongoose.set('strictQuery', true); 
 
 const connectDB = async () => {
   try {
