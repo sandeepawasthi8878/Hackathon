@@ -27,7 +27,7 @@
 
 .header h1 {
   font-size: 48px;
-  color: rgb(109, 122, 136);
+  color: rgb(238, 233, 233);
   margin-bottom: 10px;
 }
 
@@ -250,6 +250,9 @@
   }
 
   .cta-section h2 {
+    font-size: 24px;
+  }
+  .header h1{
     font-size: 24px;
   }
 }

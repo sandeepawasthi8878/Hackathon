@@ -8,7 +8,7 @@ function CompetitionPage() {
 
   return (
     <div className="competition-page">
-      <h1>Competition Categories</h1>
+      <h1 className='heading'>Competition Categories</h1>
 
       <div className="competition-category">
         <div className="competition-card ui-design">

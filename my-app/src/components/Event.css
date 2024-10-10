@@ -87,4 +87,7 @@ h1, h2, h3 {
     width: 80%;
     height: auto; /* Responsive height */
   }
+  .heading {
+    font-size: 20px;
+  }
 }

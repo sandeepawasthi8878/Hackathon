@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <header className="header">
-        <h1>Welcome to Hackathon 2024</h1>
+        <h1 className='whitee'>Welcome to Hackathon 2024</h1>
         <p>Join us for an exciting event of innovation and collaboration!</p>
       </header>
 

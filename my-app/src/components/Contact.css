@@ -1,27 +1,32 @@
+/* Main container for contact page */
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #3b3b3b; /* Dark zinc background */
-  height: 100vh; /* Full height of the viewport */
-  text-align: center;
-  padding: 20px; /* Add some padding */
+  min-height: 100vh; /* Full height of the viewport */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
-.contact-container h3 {
-  font-size: 30px;
-  color: #dbd7d7;
-}
+
 .contact-header {
-  color: #c4c0c0; /* White color for header text */
-  margin-bottom: 30px; /* Space below header */
+  color: #c4c0c0; /* Light white color for header text */
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 22px;
+  max-width: 800px; /* Restrict the width */
+  line-height: 1.5;
 }
 
 .contact-info {
   display: flex;
-  flex-wrap: wrap; /* Wrap boxes in rows */
+  flex-wrap: wrap;
   justify-content: center;
-  width: 100%; /* Full width to center boxes */
+  width: 100%; /* Ensure it stretches across */
+  margin-bottom: 30px; /* Add space below */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 .contact-method {
@@ -31,17 +36,21 @@
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
   box-shadow: 0 4px 15px rgba(119, 118, 118, 0.5); /* Box shadow for depth */
-  max-width: 300px; /* Limit width */
+  width: 100%; /* Full width by default */
+  max-width: 300px; /* Maximum width of the box */
   color: #cac4c4; /* Text color */
+  text-align: center;
+  box-sizing: border-box; /* Make sure the padding and borders are included in the width */
 }
 
 .contact-method h3 {
-  font-size: 24px;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .contact-method p {
   font-size: 18px;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .contact-method a {
@@ -53,20 +62,58 @@
   text-decoration: underline;
 }
 
-.button {
-  background-color: rgb(33, 33, 34);
-  color: #fff;
-  padding: 10px 20px;
-  margin-top: 50px; /* Space above button */
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* Additional information box */
+.info-box {
+  background-color: rgba(255, 255, 255, 0.05); /* Light transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  width: 80%; /* Responsive width */
+  max-width: 600px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.button:hover {
-  background-color: #23527c;
+.info-box h3 {
+  font-size: 24px;
+  color: #fff;
 }
 
 .spn {
-  color: white;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Button styling */
+.button {
+  background-color: #212122;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-color: #23527c; /* Button color change on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column; /* Stack boxes on top of each other */
+    align-items: center;
+  }
+
+  .contact-method {
+    width: 100%; /* Make contact boxes take up full width on small screens */
+    max-width: 90%; /* Max width for small screens */
+  }
+
+  .info-box {
+    width: 90%; /* Full width on mobile */
+  }
 }

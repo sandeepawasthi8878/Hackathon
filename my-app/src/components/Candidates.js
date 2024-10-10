@@ -50,7 +50,7 @@ function Candidates() {
             </thead>
             <tbody>
               {candidatesList.map((candidate, index) => (
-                <tr key={candidate.id} >
+                <tr key={candidate.id || index}> 
                   <td className='paddin'>{index + 1}</td>
                   <td className='paddin'>{candidate.name}</td>
                   <td className='paddin'>{candidate.email}</td>
